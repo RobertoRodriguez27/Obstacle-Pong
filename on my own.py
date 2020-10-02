@@ -41,9 +41,6 @@ class Player(pygame.sprite.Sprite):
             pygame.draw.rect(win, (0, 0, 0), (self.rect.x, self.rect.y, self.width, self.height))
         self.hitBox = (self.rect.x, self.rect.y, self.width, self.height)  # update hitBox with movement
         pygame.draw.rect(win, (255, 0, 0), self.hitBox, 2)  # hitBox visual
-        #
-        # if self.point > 1:
-        #     self.height = self.height - 50
 
 
 class Ball(pygame.sprite.Sprite):
